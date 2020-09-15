@@ -11,7 +11,6 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Work Day Scheduler</title>
 </head>
 
@@ -35,87 +34,87 @@
                 <tr>
                     <th scope="row" data-time="9" class="time-text">9:00 A.M.</th>
                     <td class="planner-event">
-                        <textarea id="9am" data-hour="9"></textarea>
+                        <textarea cols="50" id="9am" class="description" data-hour="9"></textarea>
                     </td>
                     <td>
-                        <button style="font-size:48px;color: green;"><i class="fa fa-save"></i></button>
+                        <button class="saveBtn" style="font-size:48px;color: white;"><i class="fa fa-save" ></i></button>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row" data-time="10" class="time-text">10:00 A.M.</th>
                     <td class="planner-event">
-                        <textarea id="10am" data-hour="10"></textarea>
+                        <textarea id="10am" class="description" data-hour="10"></textarea>
                     </td>
                     <td>
-                        <button style="font-size:48px;color: green;"><i class="fa fa-save"></i></button>
+                        <button class="saveBtn" style="font-size:48px;color: white;"><i class="fa fa-save" ></i></button>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row" data-time="11" class="time-text">11:00 A.M.</th>
                     <td class="planner-event">
-                        <textarea id="9am" data-hour="9"></textarea>
+                        <textarea id="11am" class="description" data-hour="11"></textarea>
                     </td>
                     <td>
-                        <button style="font-size:48px;color: green;"><i class="fa fa-save"></i></button>
+                        <button class="saveBtn" style="font-size:48px;color: white;"><i class="fa fa-save" ></i></button>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row" data-time="12" class="time-text">12:00 P.M.</th>
                     <td class="planner-event">
-                        <textarea id="9am" data-hour="9"></textarea>
+                        <textarea id="12pm" class="description" data-hour="12"></textarea>
                     </td>
                     <td>
-                        <button style="font-size:48px;color: green;"><i class="fa fa-save"></i></button>
+                        <button class="saveBtn" style="font-size:48px;color: white;"><i class="fa fa-save" ></i></button>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row" data-time="1" class="time-text">1:00 P.M.</th>
                     <td class="planner-event">
-                        <textarea id="9am" data-hour="9"></textarea>
+                        <textarea id="1pm" class="description" data-hour="13"></textarea>
                     </td>
                     <td>
-                        <button style="font-size:48px;color: green;"><i class="fa fa-save"></i></button>
+                        <button class="saveBtn" style="font-size:48px;color: white;"><i class="fa fa-save" ></i></button>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row" data-time="2" class="time-text">2:00 P.M.</th>
                     <td class="planner-event">
-                        <textarea id="9am" data-hour="9"></textarea>
+                        <textarea id="2pm" class="description" data-hour="14"></textarea>
                     </td>
                     <td>
-                        <button style="font-size:48px;color: green;"><i class="fa fa-save"></i></button>
+                        <button class="saveBtn" style="font-size:48px;color: white;"><i class="fa fa-save" ></i></button>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row" data-time="3" class="time-text">3:00 P.M.</th>
                     <td class="planner-event">
-                        <textarea id="9am" data-hour="9"></textarea>
+                        <textarea id="3pm" class="description" data-hour="15"></textarea>
                     </td>
                     <td>
-                        <button style="font-size:48px;color: green;"><i class="fa fa-save"></i></button>
+                        <button class="saveBtn" style="font-size:48px;color: white;"><i class="fa fa-save" ></i></button>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row" data-time="4" class="time-text">4:00 P.M.</th>
                     <td class="planner-event">
-                        <textarea id="9am" data-hour="9"></textarea>
+                        <textarea id="4pm" class="description" data-hour="16"></textarea>
                     </td>
                     <td>
-                        <button style="font-size:48px;color: green;"><i class="fa fa-save"></i></button>
+                        <button class="saveBtn" style="font-size:48px;color: white;"><i class="fa fa-save" ></i></button>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row" data-time="5" class="time-text">5:00 P.M.</th>
                     <td class="planner-event">
-                        <textarea id="9am" data-hour="9"></textarea>
+                        <textarea id="5pm" class="description" data-hour="17"></textarea>
                     </td>
                     <td>
-                        <button style="font-size:48px;color: green;"><i class="fa fa-save"></i></button>
+                        <button class="saveBtn" style="font-size:48px;color: white;"><i class="fa fa-save" ></i></button>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <a href="#" class="btn btn-info btn-lg">
+        <a id="clearBtn" href="#" class="btn btn-info btn-lg">
             <span class="glyphicon glyphicon-trash"></span> Clear Planner
         </a>
     </div>
@@ -123,7 +122,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
-    
+
 </body>
 
 </html>
